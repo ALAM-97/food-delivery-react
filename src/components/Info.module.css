@@ -1,0 +1,18 @@
+.card {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  background-color: rgb(70, 70, 70);
+  padding: 20px;
+  border-radius: 15px;
+  transform: translateY(-75%);
+}
+.cardTitle {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.cardInfo {
+  color: #fff;
+  margin-bottom: 15px;
+}
