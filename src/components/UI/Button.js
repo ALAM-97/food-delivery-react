@@ -4,7 +4,7 @@ import styles from './Button.module.css';
 
 const Button = (props) => {
   return ( 
-    <button className={ styles.button } type={ props.type }>{ props.value }</button>
+    <button className={ `${ styles.className } ${ styles.button } ` } type={ props.type }>{ props.value }</button>
   );
 }
 

@@ -6,10 +6,10 @@ import Button from "./UI/Button";
 
 const Header = () => {
   return ( 
-    <div className={ styles.header }>
+    <header className={ styles.header }>
       <h1>React Meals</h1>
       <Button type="button" value="Cart" />
-    </div>
+    </header>
   );
 }
 

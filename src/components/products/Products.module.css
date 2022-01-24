@@ -1,0 +1,5 @@
+.productsCard {
+  background-color: #ccc;
+  width: 70%;
+  transform: translateY(-25%);
+}

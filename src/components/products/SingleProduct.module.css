@@ -1,0 +1,30 @@
+.singleProduct {
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* Infos in the left */
+.singleProductLeft h4 {
+  font-weight: bold;
+}
+.singleProductLeft p {
+  font-style: italic;
+}
+.singleProductLeft div {
+  color: rgb(34, 165, 165);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Input and Button on the right */
+.singleProductRight {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Button style */
+.prodButton {
+  padding: 10px;
+}
