@@ -1,0 +1,19 @@
+.amount {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.action {
+  text-align: right;
+  margin-top: 15px;
+}
+.action button {
+  padding: 3px 10px;
+}
+.closeBtn {
+  background-color: rgb(226, 68, 68);
+}
+.orderBtn {
+  background-color: rgb(34, 165, 165);
+}

@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useReducer, useState } from "react";
 // styles
 import styles from './SingleProduct.module.css';
-// components
-import Button from "../UI/Button";
+
 
 const SingleProduct = (props) => {
+
+  const [prodNumber, setProdNumber] = useState(0);
+
+  const addHandler = () => {
+    if ( prodNumber < 5) {
+      setProdNumber(prodNumber + 1);
+    }
+  }
+
+  const removeHandler = () => {
+    if ( prodNumber > 0 ) {
+      setProdNumber(prodNumber - 1);
+    }
+  }
+
   return ( 
     <div className={ styles.singleProduct }>
       <div className={ styles.singleProductLeft }>
@@ -15,9 +29,22 @@ const SingleProduct = (props) => {
       <div className={ styles.singleProductRight }>
         <div>
           <label htmlFor="amount">Amount</label>
-          <input type="number" id="amount" />
+          <input type="number" min="0" max="5" id="amount" value={ prodNumber } />
         </div>
-        <Button className={ styles.prodButton } value="Add"></Button>
+        <div>
+          <button 
+            onClick={ addHandler } 
+            className={ styles.prodButton }
+          >
+            Add
+          </button>
+          <button 
+            onClick={ removeHandler } 
+            className={ `${ styles.prodButton } ${ styles.removeBtn }` }
+          >
+            Remove
+          </button>
+        </div>
       </div>
     </div>
   );

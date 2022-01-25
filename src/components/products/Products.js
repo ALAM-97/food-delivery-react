@@ -12,15 +12,16 @@ const Products = () => {
 
   return ( 
     <Card className={ styles.productsCard }>
-      { ctx.products.map( (prod) => (
-          <SingleProduct 
-            title={ prod.title }
-            description={ prod.description }
-            price={ prod.price }
-          />
-      )) 
-      }
-      
+      <ul>
+        { ctx.products.map( (prod) => (
+            <SingleProduct 
+              key={ prod.id }
+              title={ prod.title }
+              description={ prod.description }
+              price={ prod.price }
+            />
+        ))}
+      </ul>
     </Card>
   );
 }

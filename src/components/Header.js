@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 // styles
 import styles from './Header.module.css';
 //components
-import Button from "./UI/Button";
 
-const Header = () => {
+
+const Header = props => {
+
+  const [cartProd, setCartProd] = useState(0);
+  const [cartVisibility, setCartVisibility] = useState(true);
+
+  const cartHandler = () => {
+    if (cartVisibility === false) {
+      setCartVisibility(true);
+    }
+
+    props.toggleCart(cartVisibility);
+  }
+
   return ( 
     <header className={ styles.header }>
       <h1>React Meals</h1>
-      <Button type="button" value="Cart" />
+      <button className={ styles.cartBtn } type="button" onClick={ cartHandler }>
+        Your Cart
+        <span className={ styles.cartProd }>{ cartProd }</span>
+      </button>
     </header>
   );
 }

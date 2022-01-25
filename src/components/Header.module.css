@@ -6,3 +6,14 @@
   align-items: center;
   padding: 15px 200px;
 }
+.cartBtn {
+  font-size: 1.3rem;
+  padding: 5px 35px;
+}
+.cartProd {
+  background-color: #408a84;
+  padding: 0 15px;
+  border-radius: 15px;
+  margin-left: 10px;
+  border: 2px solid #fff;
+}

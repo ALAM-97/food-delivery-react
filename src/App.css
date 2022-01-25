@@ -3,3 +3,13 @@
   padding: 0;
   box-sizing: borber-box;
 }
+button {
+  background: #69d8cf;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
